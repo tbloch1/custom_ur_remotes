@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <grid>
+    <row weight="80">
+	    <touch id="touch"
+	        ondown="down"
+			onup="up"
+			onhold="hold"
+			ontap="tap" 
+			ondoubletap="double" 
+			ontouchdelta="delta"
+			text="Touch!" />
+	</row>
+    <row weight="10">
+        <button text="⏮" ontap="rewind" />
+        <button text="⏯" ontap="pause" />
+        <button text="⏭" ontap="fastforward" />
+    </row>
+    <row weight="10">
+        <button text="Close" ontap="close_window" />
+        <button text="↟" ontap="scrollup" />
+        <button text="↡" ontap="scrolldown" />
+         <button text="Subs" ontap="subs_on_off" />
+	</row>
+    <row weight="10">
+		<button text="L" ontap="left" />
+		<button text="R" ontap="right" />
+	</row>
+  </grid>
+</layout>
